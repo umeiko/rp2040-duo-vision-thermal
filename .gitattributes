@@ -1,0 +1,5 @@
+# Preserve the exact bytes of the Altium export on every platform.
+*.PrjPcb binary
+*.pcbdoc binary
+*.schdoc binary
+lib/MelexisMLX90640/src/MLX90640_* -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof

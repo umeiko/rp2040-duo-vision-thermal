@@ -1,0 +1,17 @@
+RP2040 Dual Vision Thermal
+
+The lesson sequence follows umeiko/ESP32_Dual_Vision_Thermal.
+https://github.com/umeiko/ESP32_Dual_Vision_Thermal
+
+The HTPA32x32 5.0 lookup table in include/heimann_lut.hpp is adapted from
+the ESP32 teaching repository's public Heimann example. Its upstream driver
+identifies Heimann Sensor GmbH and Dennis Pauer as its authors.
+https://github.com/umeiko/ESP32_Dual_Vision_Thermal/blob/fe181c71480a09a115e08885b692dc694c452fd2/7_heimann32x32/src/probe/def.h
+
+Melexis MLX90640 API in lib/MelexisMLX90640/src/MLX90640_API.c,
+MLX90640_API.h and MLX90640_I2C_Driver.h is copyright Melexis N.V.
+and remains under Apache-2.0. Its license is included in that directory.
+https://github.com/melexis/mlx90640-library/tree/f6be7ca1d4a55146b705f3d347f84b773b29cc86
+
+Arduino-Pico, its bundled PicoCamera library, and the Adafruit display
+libraries are obtained as build dependencies under their respective licenses.
