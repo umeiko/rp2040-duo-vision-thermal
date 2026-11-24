@@ -15,7 +15,7 @@
 | 章节 | PlatformIO 环境 | 实验 |
 | --- | --- | --- |
 | [00 硬件装配](hardware/README.md) |  | 准备物料，核对排线和电源 |
-| [01 Hello World](examples/01_hello_world) | `01_hello_world` | USB 串口、按键和电池电压 |
+| [01 PlatformIO 入门](examples/01_hello_world) | `01_hello_world` | 配置环境、编译烧录及 USB 串口 |
 | [02 点亮屏幕](examples/02_screen) | `02_screen` | ST7789 彩条与方向 |
 | [03 摄像头](examples/03_camera) | `03_camera` | PicoCamera 捕获 RGB565 并预览 |
 | [04 MLX90640 测温](examples/04_thermal_mlx90640) | `04_thermal_mlx90640` | 子页采集、标定和热图 |
@@ -25,9 +25,11 @@
 | [08 Heimann 5.0 双光融合](examples/08_fusion_heimann) | `08_fusion_heimann` | 把 Heimann 热图叠加到可见光 |
 | [09 触摸屏](examples/09_touch_screen) | `09_touch_screen` | 读取触摸坐标并在屏幕上画点 |
 
-## 编译和烧录
+## 配置环境、编译和烧录
 
-在仓库根目录运行。PlatformIO 会安装 `platformio.ini` 固定版本的 Arduino-Pico 工具链，首次构建需要联网。
+第一次使用 PlatformIO，从第一课的图文步骤开始，安装 VS Code、Git 和 PlatformIO IDE，打开含 `platformio.ini` 的仓库根目录，再编译并烧录第一个 UF2。 [PlatformIO 环境配置图文教程](examples/01_hello_world/)
+
+已有 PlatformIO Core 时，可在仓库根目录直接编译。首次构建需要联网安装固定版本的 Arduino-Pico 工具链。
 
 ```sh
 pio run -e 01_hello_world
